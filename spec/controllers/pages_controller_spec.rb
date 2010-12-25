@@ -25,6 +25,13 @@ describe PagesController do
 	  end
   end
 
+  describe "GET 'help'" do
+	  it "should be successful" do
+		  get 'help'
+		  response.should be_success
+	  end
+  end
+
   describe "check titles" do
 	  it "should have the right title" do
 		  get 'home'
@@ -34,6 +41,8 @@ describe PagesController do
 		  response.should have_selector("title",:content=>" | About")
 		  get 'contact'
 		  response.should have_selector("title",:content=>" | Contact")
+		  get 'help'
+		  response.should have_selector("title",:content=>" | Help")
  	 end
   end
 
