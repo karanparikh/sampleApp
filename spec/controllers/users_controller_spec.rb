@@ -76,7 +76,7 @@ describe UsersController do
 
     describe "success" do
       before(:each) do
-        @attr = { :name => "New User", :email => "user@example.com", :password => "foobar", password_confirmation => "foobar" }
+        @attr = { :name => "New User", :email => "user@example.com", :password => "foobar", :password_confirmation => "foobar" }
       end
 
       it "should create a user" do
