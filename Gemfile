@@ -31,6 +31,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
  group :development do
    gem 'rspec-rails','2.3.0'
    gem 'annotate-models', '1.0.4'
+   gem 'faker', '0.3.1'
  end
 
  group :test do
