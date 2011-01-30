@@ -19,7 +19,7 @@ describe UsersController do
       before(:each) do
         @user  = test_sign_in(Factory(:user))
         second = Factory(:user, :email => "another@example.com")
-        third  = Factory(:user, :email => "another@example.com")
+        third  = Factory(:user, :email => "another@example.net")
 
         @users = [@user, second, third]
       end
